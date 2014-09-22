@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<title>SisMed</title>
+<link type="text/css" rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+	<h1>Sistema Médico para Clínicas SisMed </h1>
+	<hr>
+	<br>
+	<form name="formLogin" action="LoginServlet" method="POST">
+		<fieldset>
+			<legend>Entrar</legend>
+			Login<input type="text" name="login" placeholder="Digite o seu Login" required>
+			Senha<input type="password" name="senha" placeholder="Digite a sua Senha" required>
+			<input type="submit" value="Entrar">
+			<a href="registrarUsuario.html">Registrar Usuário</a><font style="color:white;"> |</font>
+			<a href="recuperarSenha.html">Esqueci a senha</a>
+		</fieldset>
+	</form>
+	<div id="rodape">
+		<hr>
+		<p>
+			<small> &copy; Copyright 2014 SisMed<br />Todos os direitos reservados
+			</small>
+		</p>
+	</div>
+</body>
+</html>

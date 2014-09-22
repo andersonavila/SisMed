@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		<meta charset="ISO-8859-1">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<title>SisMed</title>
+		<link type="text/css" rel="stylesheet" href="css/estilo.css">
+		<style type="text/css">
+		#medico {
+			display: none;
+		}
+		</style>
+		<script type="text/javascript">
+			function mostrarMedico(valor){
+				if(valor == "medico"){
+					document.getElementById("medico").style.display = "block";
+				}else{
+					document.getElementById("medico").style.display = "none";
+				}				
+			}
+		
+		</script>
+	</head>
+	<body>
+
+	<h1>Sistema Médico para Clínicas SisMed</h1>
+	<hr>
+	<br>
+	<form name="formLogin" action="ativarUsuario.html" method="POST">
+		<fieldset>
+			<legend>Registrar Usuário</legend>
+			Nome<input type="text" name="nome" placeholder="Digite seu nome completo" required>
+			CPF<input type="text" name="cpf" placeholder="Digite seu CPF" required>
+			Data de Nascimento<input type="date" name="dataNasc" required>
+			E-mail<input type="email" name="email" placeholder="Digite seu e-mail" required>
+			Telefone<input type="text" name="telefone" placeholder="Digite seu telefone" required>
+			
+			Perfil do Usuário <select name="perfil"
+				onchange="mostrarMedico(this.value)">
+				<option value="">--Selecione--</option>
+				<option value="medico">Médico</option>
+				<option value="recepcionista">Recepcionista</option>
+			</select>
+
+			<div id="medico">
+				Especialidade<input type="text" name="especialidade"
+					placeholder="Digite sua especialidade" required> Sala de
+				Atendimento<input type="text" name="sala"
+					placeholder="Digite a sala de atendimento" required>
+			</div>
+			Username<input type="text" name="username" placeholder="Digite seu Username" required>
+			Senha<input type="password" name="senha" placeholder="Digite a sua Senha" required>
+			<input type="reset" value="Limpar Campos">
+			<input type="submit" value="Registrar">
+			<a href="index.html">Voltar</a>
+		</fieldset>
+	</form>
+	<hr>
+	<p>
+		<small> &copy; Copyright 2014 SisMed<br />Todos os direitos reservados
+		</small>
+	</p>
+</body>
+</html>
