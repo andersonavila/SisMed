@@ -31,7 +31,7 @@ hr {
 }
 
 /* Tag h1 do Cabeçalho*/
-h1 {
+h1, h2 {
 	/*font-weight:bolder;
 	font-style:italic;*/
 	text-align: center;
