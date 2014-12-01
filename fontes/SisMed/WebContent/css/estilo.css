@@ -6,10 +6,10 @@
  	*/
 @CHARSET "ISO-8859-1";
 
-/* Estilo padrão das páginas*/
+/* Estilo padrão das páginas #708090 */
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	background: #708090;
+	background:#708090 ;
 	font-size: 12pt;
 	font-weight: bolder;
 	color: white;
