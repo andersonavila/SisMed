@@ -1,13 +1,11 @@
 package model;
 
-import java.util.Date;
-
 public class Usuario {
 	private String login;
 	private String senha;
 	private String nome;
 	private String cpf;
-	private Date dataNasc;
+	private String dataNasc;
 	private String email;
 	private String telefone;
 	private boolean status;
@@ -39,10 +37,10 @@ public class Usuario {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	public Date getDataNasc() {
+	public String getDataNasc() {
 		return dataNasc;
 	}
-	public void setDataNasc(Date dataNasc) {
+	public void setDataNasc(String dataNasc) {
 		this.dataNasc = dataNasc;
 	}
 	public String getEmail() {

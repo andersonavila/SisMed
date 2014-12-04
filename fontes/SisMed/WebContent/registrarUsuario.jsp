@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html>
-		<head>
-		<meta charset="ISO-8859-1">
-		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 		<title>SisMed</title>
 		<link type="text/css" rel="stylesheet" href="css/estilo.css">
 		<script type="text/javascript">
@@ -20,7 +18,7 @@
 	<h1>Sistema Médico para Clínicas SisMed</h1>
 	<hr>
 	<br>
-	<form name="formLogin" action="sucessoRegistrarUsuario.html" method="POST">
+	<form name="formLogin" action="ControleUsuarioServlet" method="POST">
 		<fieldset>
 			<legend>Registrar Usuário</legend>
 			Nome<input type="text" name="nome" placeholder="Digite seu nome completo" required>
@@ -42,7 +40,7 @@
 				Atendimento<input type="text" name="sala"
 					placeholder="Digite a sala de atendimento" >
 			</div>
-			Username<input type="text" name="username" placeholder="Digite seu Username" required>
+			Username<input type="text" name="login" placeholder="Digite seu Username" required>
 			Senha<input type="password" name="senha" placeholder="Digite a sua Senha" required>
 			<input type="reset" value="Limpar Campos">
 			<input type="submit" value="Registrar">
